@@ -38,6 +38,21 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <27 28>;
+        };
+
+        combo_sqt {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <28 29>;
+        };
+
+        combo_dqt {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
