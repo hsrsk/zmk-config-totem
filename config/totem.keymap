@@ -79,37 +79,46 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q        &kp W       &kp E        &kp R       &kp T        &kp Y        &kp U            &kp I        &kp O       &kp P
-              &mt LSHFT A  &mt LALT S  &mt LCTRL D  &mt LCMD F  &kp G        &kp H        &mt LCMD J       &mt RCTRL K  &mt RALT I  &mt RGUI SEMICOLON
-&kp CAPSLOCK  &kp Z        &kp X       &kp C        &kp V       &kp B        &kp N        &kp M            &kp COMMA    &kp DOT     &kp FSLH            &kp BSLH
-                                       &kp DEL      &lt 0 TAB   &kp SPACE    &lt 0 SPACE  &lt 0 BACKSPACE  &kp DELETE
+              &kp Q        &kp W       &kp E         &kp R       &kp T          &kp Y        &kp U            &kp I        &kp O       &kp P
+              &mt LSHFT A  &mt LALT S  &mt LCTRL D   &mt LCMD F  &kp G          &kp H        &mt LCMD J       &mt RCTRL K  &mt RALT I  &mt RGUI SEMICOLON
+&kp CAPSLOCK  &kp Z        &kp X       &kp C         &kp V       &kp B          &kp N        &kp M            &kp COMMA    &kp DOT     &kp FSLH            &kp BSLH
+                                       &lt 5 ESCAPE  &lt 4 TAB   &lt 3 ENTER    &lt 1 SPACE  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
         Num {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp LS(PLUS)     &kp EQUAL  &trans    &trans     &kp DEL      &kp BSPC
+        &trans     &kp N4  &kp N5  &kp N6  &kp LS(UNDER)    &kp MINUS  &kp RGUI  &kp RCTRL  &kp RALT     &kp RSHFT
+&trans  &trans     &kp N7  &kp N8  &kp N9  &kp N0           &trans     &kp BSLH  &kp SQT    &kp LS(DQT)  &trans     &trans
+                           &trans  &trans  &trans           &trans     &trans    &trans
             >;
         };
 
         Nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans     &trans    &trans     &trans    &trans    &trans      &kp HOME    &kp PG_DN     &kp PG_UP     &kp END
+        &kp LSHFT  &kp LALT  &kp LCTRL  &kp LGUI  &trans    &trans      &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
+&trans  &trans     &trans    &trans     &trans    &trans    &kp C_NEXT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE  &trans
+                             &trans     &trans    &trans    &trans      &trans      &trans
             >;
         };
 
         Sym {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PLUS)     &kp EQUAL  &kp LS(LPAR)  &kp LS(RPAR)  &trans        &trans
+        &kp CAPS       &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(UNDER)    &kp MINUS  &kp LBKT      &kp RBKT      &kp LS(LBRC)  &kp LS(RBRC)
+&trans  &trans         &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)     &trans     &trans        &trans        &trans        &trans        &trans
+                                     &trans         &trans         &trans           &trans     &trans        &trans
+            >;
+        };
+
+        fn {
+            bindings = <
+        &trans   &kp F1  &kp F2  &kp F3  &kp F12    &trans  &trans    &trans     &trans    &trans
+        &kp ESC  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT
+&trans  &trans   &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans    &trans     &trans    &trans     &trans
+                         &trans  &trans  &trans     &trans  &trans    &trans
             >;
         };
 
